@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEER JS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+    <!-- HEADER  -->
+    <header>
+        <p class="p_header">Beer Js</p>
+        <nav class="navbar">
+            <label for="menu_toggle" class="menu_label">
+                <i class="fa-solid fa-bars cart_icon"></i>
+            </label>
+            <input type="checkbox" id="menu_toggle">
+            <ul class="navbar_list">
+                <li><a href="./index.html">Home</a></li>
+
+            </ul>
+            <!-- <a  class="cart-label" href="./cart.html">
+                <i class="fa-regular fa-cart-shopping cart_icon"></i>
+            </a> -->
+        </nav>
+    </header>
+
+    <!-- MAIN  -->
+    <main>
+        <section id="hero">
+                <div class="section-products">
+                <h2>Cart</h2>
+                <div class="cart-conteiner">
+                    <p id="cart-vacio" class="cart-vacio">No hay nada en el cart. Vuelve a la tienda.</p>
+                    <div id="cart-products" class="cart-products disabled">
+                        
+                    </div>
+                    <div id="cart-acciones" class="cart-acciones disabled">
+                        <div class="cart-acciones-left">
+                            <button id="cart-acciones-vaciar" class="cart-acciones-vaciar">Vaciar Cart</button>
+                        </div>
+                        <div class="cart-acciones-right">
+                            <div class="cart-acciones-total">
+                                <p>Total:</p>
+                                <p id="total">$1400</p>
+                            </div>
+                            <button id="cart-acciones-comprar"class="cart-buy">Comprar</button>
+                        </div>
+                        
+                        
+
+                    </div><p id="cart-comprado"class="cart-comprado disabled">Tu compra ha sido realizada!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER  -->
+    <footer>
+        <div class="footer_container">
+            <h3 class="p_header">Beer Js</h3>
+            <p>Con cerveza no hay tristeza.</p>
+            <ul class="redes_links">
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+            <p>Diseñado por Pacenza Tomás.</p>
+        </div>
+    </footer>
+    <script src="./cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEER JS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+
+    <!-- HEADER  -->
+    <header>
+        <p class="p_header">Beer Js</p>
+        <nav class="navbar">
+            <label for="menu_toggle" class="menu_label">
+                <i class="fa-solid fa-bars cart_icon"></i>
+            </label>
+            <input type="checkbox" id="menu_toggle">
+            <ul class="navbar_list">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Ingresar</a></li>
+            </ul>
+        <a  class="cart-label" href="./cart.html">
+            <i class="fa-regular fa-cart-shopping cart_icon"><span id="number-cart" class="number-cart">0</span></i>
+        </a>
+        </nav>
+    </header>
+
+    <!-- MAIN  -->
+    <main>
+        <section id="hero">
+            <div class="hero_info">
+                <h1>Beer Js</h1>
+                <p>¡Bienvenido a Beer Js!, la mejor cerveza artesanal de la Ciudad de La Plata.</p>
+            </div>
+            <div class="section-products">
+                <h2 id="titulo-principal">Nuestras Cervezas</h2>
+                <div class="categories">
+                    <button id="todos" class="category active">Todas</button>
+                    <button id="rubia" class="category ">Rubia</button>
+                    <button id="roja" class="category">Roja</button>
+                    <button id="negra" class="category">Negra</button>
+                    <button id="special" class="category">Special</button>
+                </div>
+                <div id="contenedor-productos"class="product_container">
+                <!-- <div class="product">
+                    <img class="producto-imagen" src="./assets/img/cerve7.png" alt="Imagen de Cerveza">
+                    <div class="product_info">
+                        <h3>CREAM</h3>
+                        <span> $650</span>
+                        <button class="btn_product">Comprar</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img class="producto-imagen" src="./assets/img/cerve6.png" alt="Imagen de Cerveza">
+                    <div class="product_info">
+                        <h3>RED IPA</h3>
+                        <span> $700</span>
+                        <button class="btn_product">Comprar</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img class="producto-imagen" src="./assets/img/cerve8.png" alt="Imagen de Cerveza">
+                    <div class="product_info">
+                        <h3>IPA</h3>
+                        <span> $700</span>
+                        <button class="btn_product">Comprar</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img class="producto-imagen" src="./assets/img/cerve5.png" alt="Imagen de Cerveza">
+                    <div class="product_info">
+                        <h3>APA</h3>
+                        <span> $700</span>
+                        <button class="btn_product">Comprar</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img class="producto-imagen" src="./assets/img/cerve5.png" alt="Imagen de Cerveza">
+                    <div class="product_info">
+                        <h3>APA</h3>
+                        <span> $700</span>
+                        <button class="btn_product">Comprar</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img class="producto-imagen" src="./assets/img/cerve5.png" alt="Imagen de Cerveza">
+                    <div class="product_info">
+                        <h3>APA</h3>
+                        <span> $700</span>
+                        <button class="btn_product">Comprar</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img class="producto-imagen" src="./assets/img/cerve5.png" alt="Imagen de Cerveza">
+                    <div class="product_info">
+                        <h3>APA</h3>
+                        <span> $700</span>
+                        <button class="btn_product">Comprar</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img class="producto-imagen" src="./assets/img/cerve5.png" alt="Imagen de Cerveza">
+                    <div class="product_info">
+                        <h3>APA</h3>
+                        <span> $700</span>
+                        <button class="btn_product">Comprar</button>
+                    </div>
+                </div> -->
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER  -->
+    <footer>
+        <div class="footer_container">
+            <h3 class="p_header">Beer Js</h3>
+            <p>Con cerveza no hay tristeza.</p>
+            <ul class="redes_links">
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+            <p>Diseñado por Pacenza Tomás.</p>
+        </div>
+        
+            
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
+
