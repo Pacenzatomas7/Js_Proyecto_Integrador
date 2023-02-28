@@ -175,13 +175,3 @@ function actualizarNumero () {
     let nuevoNumero = productosEnCarrito.reduce((acc,producto) => acc + producto.cantidad, 0);
     numeroCart.innerText = nuevoNumero;
 }
-
-// const toggleMenu = () => {
-//     barsMenu.classList.toggle("open-menu");
-// };
-
-// const init = () => {
-//     barsBtn.addEventListener("click", toggleMenu);
-// };
-
-init ();

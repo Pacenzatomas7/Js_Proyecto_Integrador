@@ -1,8 +1,40 @@
 @media (max-width:992px) {
     .navbar {
-        gap: 100px;
+        gap: 20px;
     }
 
+    .navbar_list{
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        background-color: var(--background);
+        border: 2px solid var(--secondary);
+        border-top: 0px;
+        border-radius: 0px 0px 15px 15px;
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 30px;
+        z-index: 2;
+        display: none;
+    }
+
+    .toggle {
+        color: var(--secondary);
+        font-size: 20px;
+    }
+
+    #menu-toggle:checked + .navbar_list{
+        display: flex;
+    }
+
+    .menu-label {
+        display: flex;
+        cursor: pointer;
+        order: 2;
+    }
 
     .product_container {
         grid-template-columns: 1fr 1fr 1fr;
