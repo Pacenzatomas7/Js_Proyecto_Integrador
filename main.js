@@ -1,3 +1,11 @@
+const contenedorProductos = document.querySelector("#contenedor-productos");
+const botonesCategorias = document.querySelectorAll(".category");
+const tituloPrincipal = document.querySelector("#titulo-principal");
+let botonesAgregar = document.querySelectorAll(".btn_product");
+const numeroCart = document.querySelector("#number-cart");
+const barsBtn = document.querySelector(".menu-label");
+const barsMenu = document.querySelector(".navbar_list");
+
 const productos = [
     {
         id: "cerve1",
@@ -81,13 +89,7 @@ const productos = [
     },
 ]
 
-const contenedorProductos = document.querySelector("#contenedor-productos");
-const botonesCategorias = document.querySelectorAll(".category");
-const tituloPrincipal = document.querySelector("#titulo-principal");
-let botonesAgregar = document.querySelectorAll(".btn_product");
-const numeroCart = document.querySelector("#number-cart");
-const barsBtn = document.querySelector(".menu_label");
-const barsMenu = document.querySelector(".navbar_list");
+
 
 function cargarProductos (productosElegidos) {
 
@@ -175,3 +177,13 @@ function actualizarNumero () {
     let nuevoNumero = productosEnCarrito.reduce((acc,producto) => acc + producto.cantidad, 0);
     numeroCart.innerText = nuevoNumero;
 }
+
+const toggleMenu = () => {
+    barsMenu.classList.toggle("open-menu")
+}
+
+const init = () => {
+    barsBtn.addEventListener("click", toggleMenu);
+};
+
+init ();

@@ -36,6 +36,10 @@
         order: 2;
     }
 
+    .open-menu {
+        display: flex;
+    }
+
     .product_container {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -69,6 +73,11 @@
         
     }  
 
+    .about-title {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
     .cart-product {
         gap: 2rem;
         flex-wrap: wrap;
@@ -87,9 +96,7 @@
 
 @media (max-width:395px) {
 
-    .section-products h2 {
-        font-size: 25px;
-        font-weight: 500;
-        
+    #about p {
+        font-size: 14px;
     }
 }

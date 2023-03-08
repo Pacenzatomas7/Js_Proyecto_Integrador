@@ -39,7 +39,7 @@ header {
     background-clip: text;
     -webkit-background-clip: text;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
 }
 
@@ -63,6 +63,14 @@ header {
     font-weight: 400;
 }
 
+.navbar ul li {
+    transition: 0.4s;
+}
+
+.navbar ul li:hover {
+    border-bottom: 2px solid var(--secondary);
+}
+
 .cart_icon {
     padding: 7px 18px;
     margin-top: 3px;
@@ -77,7 +85,11 @@ header {
     padding: 0 1px;
 }
 
-#menu-toggle, .menu-label {
+/* #menu-toggle, .menu-label {
+    display: none;
+} */
+
+.menu-label {
     display: none;
 }
 
@@ -102,9 +114,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* height: 700px; */
     gap: 150px;
-    margin-bottom: 130px;
 }
 
 .hero_info {
@@ -148,6 +158,11 @@ main {
     font-size: 35px;
     font-weight: 600;
     text-align: center;
+    transition: 0.4s;
+}
+
+.section-products h2:hover {
+    color: var(--secondary);
 }
 
 .categories {
@@ -236,9 +251,43 @@ main {
     color: var(--text);
 }
 
+/* ABOUT  */
 
+#about {
+    padding: 100px 100px;
+    margin-bottom: 50px;
+}
 
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
 
+.about-title {
+    color: var(--text);
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 35px;
+    transition: 0.4s;
+}
+
+.about-title:hover {
+    color: var(--secondary);
+}
+
+#about p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+#about p span {
+    color: var(--secondary);
+    font-weight: 600;
+}
 
 /* FOOTER  */
 
